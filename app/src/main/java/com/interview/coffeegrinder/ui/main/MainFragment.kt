@@ -25,6 +25,12 @@ class MainFragment : Fragment() {
         return inflater.inflate(R.layout.main_fragment, container, false)
     }
 
+    @Deprecated(
+        "Deprecated", ReplaceWith(
+            "super.onActivityCreated(savedInstanceState)",
+            "androidx.fragment.app.Fragment"
+        )
+    )
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
     }
